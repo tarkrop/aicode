@@ -7,14 +7,6 @@ from common.layers import *
 
 
 class DeepConvNet:
-    """정확도 99% 이상의 고정밀 합성곱 신경망
-
-    네트워크 구성은 아래와 같음
-        conv - relu - conv- relu - pool -
-        conv - relu - conv- relu - pool -
-        conv - relu - conv- relu - pool -
-        affine - relu - dropout - affine - dropout - softmax
-    """
     def __init__(self, input_dim=(1, 28, 28),
                  conv_param_1 = {'filter_num':16, 'filter_size':3, 'pad':1, 'stride':1},
                  conv_param_2 = {'filter_num':16, 'filter_size':3, 'pad':1, 'stride':1},
