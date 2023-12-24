@@ -16,5 +16,5 @@ sampled = 10000
 x_test = x_test[:sampled]
 t_test = t_test[:sampled]
 
-print("caluculate accuracy... ")
+print("caluculate accuracy... ") //accuracy: 0.9922
 print(network.accuracy(x_test, t_test))
